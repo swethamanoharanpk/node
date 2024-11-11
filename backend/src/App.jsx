@@ -3,7 +3,9 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import { useSelector } from 'react-redux'
-import Home from './pages/home'
+
+import Profile from './pages/Profile'
+import Home from './pages/Home'
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
     },
     {path:'/signup',
       element:<Signup/>
+    },
+    {path:'/profilepage',
+      element:token?<Profile/>:<Login/>
     }
   ])
   return (

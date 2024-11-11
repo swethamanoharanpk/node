@@ -27,3 +27,15 @@ export const loginfunction = async(logininf,dispatch)=>{
     }
 
 }
+
+export const getDatafromDatabases = async(id)=>{
+    try{
+        const dataResponse = await axios.get(`http://localhost:3000/user/singledata/${id}`)
+        console.log("finalanswer" , dataResponse.data)
+        return dataResponse.data
+
+
+    }catch(err){}
+
+}
+

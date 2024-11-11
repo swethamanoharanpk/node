@@ -1,18 +1,12 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { removeDatas } from '../Redux/Userslice'
+import Navbar from '../components/Navbar'
 
 function Home() {
-    const dispatch = useDispatch()
-
-    function remove(){
-        dispatch(removeDatas())
-
-    }
   return (
+    
     <div>
+    <Navbar/>
     <h1>welcome to home page</h1>
-    <button onClick={remove}>Button</button>
     </div>
   )
 }

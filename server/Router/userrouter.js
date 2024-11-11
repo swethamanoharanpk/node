@@ -6,7 +6,7 @@ const verifyToken = require('../jwtverify')
 
 router.post('/postdata',postedDatas)
 router.get('/getdatas',getDatafromDatabase)
-router.get('/singledata/:id',verifyToken,getsingleData)
+router.get('/singledata/:id',getsingleData)
 router.get('/querydata',getsingleDatabyquery)
 router.delete('/deletedata',deleteData)
 router.put('/updatedata',updateDatabase)

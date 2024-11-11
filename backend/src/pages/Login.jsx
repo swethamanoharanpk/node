@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { loginfunction } from '../Api';
 import { useDispatch } from 'react-redux';
 
+
 const Login = () => {
   const dispatch = useDispatch()
 
@@ -26,6 +27,8 @@ const Login = () => {
 
   }
   return (
+
+    <div>
     <MDBContainer fluid className="p-3 my-5">
 
       <MDBRow>
@@ -56,6 +59,7 @@ const Login = () => {
       </MDBRow>
 
     </MDBContainer>
+    </div>
 
   )
 }
